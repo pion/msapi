@@ -25,3 +25,12 @@ type MediaStreamTrack interface {
 	GetConstraints()
 	Clone() MediaStreamTrack
 }
+
+// MediaRecorder for media stream recording
+type MediaRecorder interface {
+	Start(timeSlice uint)
+	Stop()
+	Pause()
+	Resume()
+	RequestData()
+}
