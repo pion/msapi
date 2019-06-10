@@ -1,0 +1,14 @@
+prefix=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/lib
+includedir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.27.103
+Requires: libavcodec >= 58.52.102, libswresample >= 3.4.100, libavutil >= 56.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz -Wl,-framework,CoreFoundation -Wl,-framework,Security
+Libs.private: 
+Cflags: -I${includedir}

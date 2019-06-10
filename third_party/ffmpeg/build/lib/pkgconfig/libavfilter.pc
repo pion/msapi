@@ -1,0 +1,14 @@
+prefix=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/lib
+includedir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.55.100
+Requires: libswscale >= 5.4.101, libpostproc >= 55.4.100, libavformat >= 58.27.103, libavcodec >= 58.52.102, libswresample >= 3.4.100, libavutil >= 56.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -framework OpenGL -framework OpenGL -pthread -lm -framework CoreImage -framework AppKit
+Libs.private: 
+Cflags: -I${includedir}

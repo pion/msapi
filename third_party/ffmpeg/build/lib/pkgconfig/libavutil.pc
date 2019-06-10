@@ -1,0 +1,14 @@
+prefix=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/lib
+includedir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.28.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}

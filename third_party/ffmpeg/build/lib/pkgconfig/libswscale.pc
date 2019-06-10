@@ -1,0 +1,14 @@
+prefix=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build
+exec_prefix=${prefix}
+libdir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/lib
+includedir=/Users/xuzhiqiang/.gvm/pkgsets/go1.10/global/src/github.com/zhiqiangxu/msapi/third_party/ffmpeg/build/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.4.101
+Requires: libavutil >= 56.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale -lm
+Libs.private: 
+Cflags: -I${includedir}
